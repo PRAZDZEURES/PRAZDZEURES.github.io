@@ -106,47 +106,92 @@ Header
                         L’hiver le gîte est entièrement enseveli sous la neige.
                     </p>
                 </div>
-                <div class="col-lg-6 content">
+                <div class="col-lg-6 content my-auto">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half"
+                         data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.Indicators-->
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="view">
+                                    <img class="d-block w-100" src="img/photo1.jpeg" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="img/photo10.jpg" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="img/photo10bis.jpg" alt="Third slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-example-2" role="button"
+                           onclick="$('#carousel-example-2').carousel('prev')">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-2" role="button"
+                           onclick="$('#carousel-example-2').carousel('next')">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="appear">
+        <div class="container wow fadeInUp">
+            <h2 class="subtitle">Tarifs</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
                     <p>
-                        Album goes here
+                        <span class="counters"><span data-toggle="counter-up">40</span>€</span> Demi pension
+                        <br/>
+                        <span class="counters2"><span data-toggle="counter-up">28</span>€</span> Demi
+                        pension enfants de – de 10 ans
+                        <br/>
+                        La demi-pension comprend la nuitée en refuge, le repas du soir et le petit déjeuner.
+                        <br/>
+                        <span class="bold">Chèques, espèces, mais pas de CB car le refuge n’a pas l’électricité.</span>
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="prices"/>
-    <div class="container wow fadeInUp">
-        <h2 class="subtitle">Tarifs</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <p>
-                    <span class="counters"><span data-toggle="counter-up">40</span>€</span> Demi pension
-                    <br/>
-                    <span class="counters2"><span data-toggle="counter-up">28</span>€</span> Demi
-                    pension enfants de – de 10 ans
-                    <br/>
-                    La demi-pension comprend la nuitée en refuge, le repas du soir et le petit déjeuner.
-                    <br/>
-                    <span class="bold">Chèques, espèces, mais pas de CB car le refuge n’a pas l’électricité.</span>
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <p class="bold">Réservation indispensable</p>
-                <div class="info">
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p style="vertical-align: middle"><a href="tel:0625885261">06.25.88.52.61</a></p>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <div class="col-lg-6 my-auto">
+                    <p class="bold">Réservation indispensable</p>
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p style="vertical-align: middle"><a href="tel:0625885261">06.25.88.52.61</a></p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <section id="food">
+    <section id="food" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <div class="row">
                 <div class="col-lg-6">
@@ -186,7 +231,7 @@ Header
             </div>
         </div>
     </section>
-    <section id="dates">
+    <section id="dates" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <h2 class="subtitle">Dates</h2>
             <p>
@@ -196,7 +241,7 @@ Header
             </p>
         </div>
     </section>
-    <section id="access">
+    <section id="access" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <h2 class="subtitle">Accès</h2>
             <div class="row">
@@ -232,7 +277,7 @@ Header
         <div class="container wow fadeIn">
         </div>
     </section>
-    <section id="aboutus">
+    <section id="aboutus" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <h2 class="title">Qui sommes-nous ?</h2>
             <div class="row about-container" style="padding-top: 15px; 
@@ -288,7 +333,7 @@ Header
         <div class="container wow fadeIn">
         </div>
     </section>
-    <section id="events">
+    <section id="events" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <h2 class="title">Activités</h2>
             <div class="row about-container" style="padding-top: 15px;">
@@ -317,7 +362,7 @@ Header
             </div>
         </div>
     </section>
-    <section id="faune">
+    <section id="faune" class="appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <div class="row about-container" style="padding-top: 15px;">
                 <div class="col-lg-6 content order-lg-3 order-4 my-auto">
@@ -355,7 +400,7 @@ Header
         <div class="container wow fadeIn">
         </div>
     </section>
-    <section id="gallery2-i" class="mbr-gallery mbr-slider-carousel cid-qQEAKWt5pr">
+    <section id="photos" class="mbr-gallery mbr-slider-carousel cid-qQEAKWt5pr appear">
         <div class="container wow fadeInUp" style="padding-top: 15px;">
             <h2 class="title">Photos</h2>
             <div>
@@ -457,11 +502,12 @@ Header
                                     </div>
                                 </div>
                                 <a class="carousel-control carousel-control-prev" role="button" data-slide="prev"
-                                   href="#lb-gallery2-i">
+                                   href="#lb-gallery2-i" onclick="$('#lb-gallery2-i').carousel('prev')">
                                     <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
                                     <span class="sr-only">Précédent</span>
                                 </a>
-                                <a class="carousel-control carousel-control-next" role="button" data-slide="next"
+                                <a class="carousel-control carousel-control-next" role="button"
+                                   onclick="$('#lb-gallery2-i').carousel('next')"
                                    href="#lb-gallery2-i">
                                     <span class="mbri-right mbr-iconfont" aria-hidden="true"></span>
                                     <span class="sr-only">Suivant</span>
@@ -485,13 +531,14 @@ Header
     <div class="footer-top">
         <div class="container about-container">
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4" style="text-align: center">
                     Le Praz Dzeures
                     <div class="social-links">
-                        <a href="https://www.facebook.com/fermechevrefeuille/" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/fermechevrefeuille/" class="facebook"><i
+                                class="fa fa-facebook"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div style="text-align: center">
                     <div class="info">
                         <div>
                             <i class="fa fa-phone"></i>

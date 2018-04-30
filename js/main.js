@@ -101,6 +101,11 @@ jQuery(document).ready(function($) {
     jQuery('.appear').appear();
     jQuery(".appear").on("appear", function(data) {
         var id = $(this).attr("id");
+        if (id === "faune") {
+            id = "events";
+        } else if (id === "access" || id === "access" || id === "food" || id === "prices") {
+            id = "refuge";
+        }
         jQuery("#nav-menu-container li").removeClass('menu-active');
         jQuery("#nav-menu-container a[href='#" + id + "']").parent().addClass("menu-active");
     });
