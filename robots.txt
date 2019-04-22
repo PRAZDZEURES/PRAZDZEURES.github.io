@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://prazdzeures.fr/sitemap.xml
+Sitemap: https://prazdzeures.github.io/sitemap.xml
